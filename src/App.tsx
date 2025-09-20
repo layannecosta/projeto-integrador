@@ -1,4 +1,5 @@
 // Importações de componentes de páginas
+import About from "./pages/about";
 import Details from "./pages/details";
 import Home from "./pages/home";
 import ListProducts from "./pages/list-products";
@@ -28,6 +29,15 @@ export default function App() {
       element: (
         <UserTemplate>
           <Home />
+        </UserTemplate>
+      ),
+    },
+    {
+      // Rota da página Quem Somos
+      path: "/about",
+      element: (
+        <UserTemplate>
+          <About />
         </UserTemplate>
       ),
     },

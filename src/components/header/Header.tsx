@@ -14,17 +14,17 @@ export default function Header() {
             <ul className="flex gap-8 items-center">
                 {/* Link para página inicial */}
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/" className="hover:text-gray-200 transition-colors duration-200">Home</Link>
                 </li>
 
-                {/* Link para página institucional */}
+                {/* Link para página Quem Somos */}
                 <li>
-                    <Link to="#">Quem Somos</Link>
+                    <Link to="/about" className="hover:text-gray-200 transition-colors duration-200">Quem Somos</Link>
                 </li>
 
                 {/* Botão de login/acesso */}
                 <li>
-                    <button className="bg-secundary px-8 py-2 rounded-md">Entrar</button>
+                    <button className="bg-secundary px-8 py-2 rounded-md hover:bg-secundary/90 transition-colors duration-200">Entrar</button>
                 </li>
             </ul>
         </div>
