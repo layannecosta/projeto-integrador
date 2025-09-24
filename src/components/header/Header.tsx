@@ -24,7 +24,9 @@ export default function Header() {
 
                 {/* Botão de login/acesso */}
                 <li>
-                    <button className="bg-secundary px-8 py-2 rounded-md hover:bg-secundary/90 transition-colors duration-200">Entrar</button>
+                    <button
+                        onClick={() => navigate("/login")}
+                        className="bg-secundary px-8 py-2 rounded-md hover:bg-secundary/90 transition-colors duration-200">Entrar</button>
                 </li>
             </ul>
         </div>

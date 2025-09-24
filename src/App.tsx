@@ -12,9 +12,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 // Importação do template base
 import UserTemplate from "./template/user-template";
+import AuthTemplate from "./template/auth-template";
 
 // Importações do React Router
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Login from "./pages/login";
+import Register from "./pages/register";
 
 /**
  * Componente principal da aplicação
@@ -66,6 +69,24 @@ export default function App() {
         <UserTemplate>
           <SearchProducts />
         </UserTemplate>
+      ),
+    },
+    {
+      // Rota de login
+      path: "/login",
+      element: (
+        <AuthTemplate>
+          <Login />
+        </AuthTemplate>
+      ),
+    },
+    {
+      // Rota de registro
+      path: "/register",
+      element: (
+        <AuthTemplate>
+          <Register />
+        </AuthTemplate>
       ),
     },
     {
